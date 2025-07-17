@@ -1,6 +1,6 @@
-# loa-db
+# NitroKV
 
-**LOA-DB** is an ultra-performant, in-memory key-value database inspired by Redis, ripgrep, and embedded systems like Sled — but with a modern Rust-native twist.
+**NitroKV DB** is an ultra-performant, in-memory key-value database inspired by Redis, ripgrep, and embedded systems like Sled — but with a modern Rust-native twist.
 
 > ⚡ Fast. 🔍 Searchable. 🧠 Smart. 📦 Embeddable.
 
@@ -8,7 +8,7 @@
 
 ## 📜 Project Goals
 
-LOA-DB aims to be:
+NitroKV-DB aims to be:
 - **Blazing fast**: Zero-copy, memory-mapped reads and append-only writes
 - **Minimal & practical**: Single binary, no external dependencies
 - **Searchable**: Full-text or regex-based search support over values
@@ -23,11 +23,11 @@ LOA-DB aims to be:
 ### 🔧 Installation
 
 ```bash
-git clone git@github.com:NikoJT/loa-db.git
-cd loa-db
+git clone git@github.com:NikoJT/NitroKV.git
+cd NitroKV
 cargo build --release
 ```
-### 🧪 Running LOA-DB
+### 🧪 Running NitroKV
 ```bash
 cargo run -- set mykey "hello world"
 cargo run -- get mykey
@@ -69,21 +69,21 @@ cargo run -- get mykey
 ## 🔬 Example CLI Usage
 ```bash
 # Set a value
-loa-db set user:42 '{"name": "Alice", "age": 30}'
+nitro set user:42 '{"name": "Alice", "age": 30}'
 
 # Get it
-loa-db get user:42
+nitro get user:42
 
 # Delete a key
-loa-db del user:42
+nitro del user:42
 
 # Search values
-loa-db search "Alice"
+nitro search "Alice"
 ```
 
 ## 🤝 Contributing
 Pull requests welcome. Please file issues or ideas if you want to help design new features or storage formats.
 
 ## 📄 License
-
+creator github: @NikoJT
 MIT
